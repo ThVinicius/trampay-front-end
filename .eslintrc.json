@@ -6,10 +6,12 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "react-app",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "prettier"
   ],
+  "settings": { "react": { "version": "detect" } },
   "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,6 +20,7 @@
   },
   "plugins": [
     "react",
+    "eslint-plugin-react",
     "@typescript-eslint",
     "react-hooks",
     "eslint-plugin-import-helpers"
