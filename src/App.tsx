@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import GlobalCSS from './assets/css/Global'
 import ResetCSS from './assets/css/Reset'
 import { SignIn } from './pages/sign-in/Index'
+import { SignUp } from './pages/sign-up/Index'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ToastContainer />
       <Routes>
         <Route path="/" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   )
