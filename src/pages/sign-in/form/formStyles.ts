@@ -22,6 +22,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 `
 
 const Anchor = styled(Link)`
