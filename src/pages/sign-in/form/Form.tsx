@@ -5,7 +5,7 @@ import { Input } from '../../../components/input/Input'
 import { InputPassword } from '../../../components/inputPassword/InputPassword'
 import { Logo } from '../../../components/logo/Logo'
 import { useSignIn } from '../../../hooks/api/useSignIn'
-import { Container, Card, Anchor } from './formStyles'
+import { Container, Card, Anchor, Title } from './formStyles'
 
 export const Form: FC = () => {
   const [email, setEmail] = useState('')
@@ -21,6 +21,7 @@ export const Form: FC = () => {
   return (
     <Card>
       <Logo />
+      <Title>Acessar conta</Title>
       <Container onSubmit={submit}>
         <Input
           type="email"

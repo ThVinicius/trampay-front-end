@@ -31,4 +31,9 @@ const Anchor = styled(Link)`
   text-align: center;
 `
 
-export { Container, Card, Anchor }
+const Title = styled.h1`
+  margin-top: 25px;
+  font: normal 700 2.2rem 'Roboto', sans-serif;
+`
+
+export { Container, Card, Anchor, Title }

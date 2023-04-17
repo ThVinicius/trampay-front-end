@@ -5,7 +5,7 @@ import { Input } from '../../../components/input/Input'
 import { InputPassword } from '../../../components/inputPassword/InputPassword'
 import { Logo } from '../../../components/logo/Logo'
 import { useSignUp } from '../../../hooks/api/useSignUp'
-import { Container, Card, Anchor } from './formStyles'
+import { Container, Card, Anchor, Title } from './formStyles'
 
 export const Form: FC = () => {
   const { loading, signUp } = useSignUp()
@@ -22,6 +22,7 @@ export const Form: FC = () => {
   return (
     <Card>
       <Logo />
+      <Title>Criar conta</Title>
       <Container onSubmit={submit}>
         <Input
           type="email"
