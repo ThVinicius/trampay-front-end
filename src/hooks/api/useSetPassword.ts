@@ -43,6 +43,12 @@ export function useSetPassword(token: string) {
 
             break
 
+          case 401:
+            renderToast = 'Token incorreto ou expirado, peça outro link!'
+
+            navigate('/')
+            break
+
           default:
             renderToast = 'Erro inesperado, tente mais tarde'
             break
