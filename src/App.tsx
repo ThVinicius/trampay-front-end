@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import GlobalCSS from './assets/css/Global'
 import ResetCSS from './assets/css/Reset'
+import { Home } from './pages/home/Index'
 import { RecoverPassword } from './pages/recoverPassword/Index'
 import { SetPassword } from './pages/setPassword/Index'
 import { SignIn } from './pages/sign-in/Index'
@@ -20,6 +21,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/password-recovery" element={<RecoverPassword />} />
         <Route path="/auth/set-password" element={<SetPassword />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </BrowserRouter>
   )
