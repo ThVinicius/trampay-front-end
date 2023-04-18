@@ -5,7 +5,7 @@ import { Input } from '../../../components/input/Input'
 import { InputPassword } from '../../../components/inputPassword/InputPassword'
 import { Logo } from '../../../components/logo/Logo'
 import { useSignUp } from '../../../hooks/api/useSignUp'
-import { Container, Card, Anchor, Title } from './formStyles'
+import { Container, Anchor, Title } from './formStyles'
 
 export const Form: FC = () => {
   const { loading, signUp } = useSignUp()
@@ -20,7 +20,7 @@ export const Form: FC = () => {
   }
 
   return (
-    <Card>
+    <>
       <Logo />
       <Title>Criar conta</Title>
       <Container onSubmit={submit}>
@@ -46,6 +46,6 @@ export const Form: FC = () => {
         <ButtonLoading name="Cadastrar" loading={loading} />
       </Container>
       <Anchor to="/">Já tem uma conta? acesse-a!</Anchor>
-    </Card>
+    </>
   )
 }
