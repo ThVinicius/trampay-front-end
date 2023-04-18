@@ -5,7 +5,7 @@ import { Input } from '../../../components/input/Input'
 import { InputPassword } from '../../../components/inputPassword/InputPassword'
 import { Logo } from '../../../components/logo/Logo'
 import { useSignIn } from '../../../hooks/api/useSignIn'
-import { Container, Card, Anchor, Title } from './formStyles'
+import { Container, Anchor, Title } from './formStyles'
 
 export const Form: FC = () => {
   const [email, setEmail] = useState('')
@@ -19,7 +19,7 @@ export const Form: FC = () => {
   }
 
   return (
-    <Card>
+    <>
       <Logo />
       <Title>Acessar conta</Title>
       <Container onSubmit={submit}>
@@ -40,6 +40,6 @@ export const Form: FC = () => {
       </Container>
       <Anchor to="/sign-up">Não tem uma conta? crie uma!</Anchor>
       <Anchor to="/password-recovery">Esqueci minha senha</Anchor>
-    </Card>
+    </>
   )
 }

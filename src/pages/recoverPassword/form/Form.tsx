@@ -3,7 +3,7 @@ import { Dispatch, FC, FormEvent, SetStateAction } from 'react'
 import { ButtonLoading } from '../../../components/buttonLoading/ButtonLoading'
 import { Input } from '../../../components/input/Input'
 import { Logo } from '../../../components/logo/Logo'
-import { Container, Card, Anchor, Title } from './formStyles'
+import { Container, Anchor, Title } from './formStyles'
 
 interface IProps {
   email: string
@@ -20,7 +20,7 @@ export const Form: FC<IProps> = ({ email, setEmail, loading, sendEmail }) => {
   }
 
   return (
-    <Card>
+    <>
       <Logo />
       <Title>Recuperação de senha</Title>
       <Container onSubmit={submit}>
@@ -35,6 +35,6 @@ export const Form: FC<IProps> = ({ email, setEmail, loading, sendEmail }) => {
       </Container>
       <Anchor to="/sign-up">Não tem uma conta? crie uma!</Anchor>
       <Anchor to="/">Já tem uma conta? acesse-a!</Anchor>
-    </Card>
+    </>
   )
 }

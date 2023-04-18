@@ -4,7 +4,7 @@ import { ButtonLoading } from '../../../components/buttonLoading/ButtonLoading'
 import { InputPassword } from '../../../components/inputPassword/InputPassword'
 import { Logo } from '../../../components/logo/Logo'
 import { useSetPassword } from '../../../hooks/api/useSetPassword'
-import { Container, Card, Title } from './formStyles'
+import { Container, Title } from './formStyles'
 
 interface IProps {
   token: string
@@ -22,7 +22,7 @@ export const Form: FC<IProps> = ({ token }) => {
   }
 
   return (
-    <Card>
+    <>
       <Logo />
       <Title>Mudar senha</Title>
       <Container onSubmit={submit}>
@@ -40,6 +40,6 @@ export const Form: FC<IProps> = ({ token }) => {
         />
         <ButtonLoading name="Mudar senha" loading={loading} />
       </Container>
-    </Card>
+    </>
   )
 }
