@@ -31,6 +31,7 @@ Desafio técnico do processo seletivo da Trampay.
 - Acessar uma conta
 - Recuperar a senha
 - Enviar um CSV ao back-end
+  - Na pasta public/csv estão alguns exemplos de arquivos csv aceitos pelo back-end
 
 <h1 align="center" >
 <img alt="gif" src="public/desafio-trampay.gif">
