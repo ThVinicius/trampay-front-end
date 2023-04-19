@@ -10,6 +10,13 @@ const Container = styled.main`
   background: #11998e;
   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
   background: linear-gradient(to right, #38ef7d, #11998e);
+
+  @media (max-width: 450px) {
+    div:first-child {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
 `
 
 export { Container }

@@ -11,6 +11,12 @@ export const Container = styled.form`
   button {
     margin-top: 20px;
   }
+
+  @media (max-width: 450px) {
+    button {
+      width: 100%;
+    }
+  }
 `
 
 export const InputLabel = styled.label`

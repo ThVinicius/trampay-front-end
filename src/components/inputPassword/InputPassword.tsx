@@ -24,7 +24,12 @@ export const InputPassword: FC<IProps> = ({
     useInputPassword(loading)
 
   return (
-    <InputBox width={width} height={height} backGroundColor={backGroundColor}>
+    <InputBox
+      width={width}
+      height={height}
+      backGroundColor={backGroundColor}
+      className="input-password-container"
+    >
       <input
         type={type}
         placeholder={placeholder}
